@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(189, 184, 172);
+    background-image:linear-gradient(to top,rgb(247, 188, 151),rgb(248, 133, 62),rgb(248, 133, 62), rgb(238, 177, 139));
     color: rgb(8, 7, 7);
     font-family: 'Quicksand', sans-serif;
     display: grid;
@@ -27,12 +27,11 @@ main{
 }
 footer{
     grid-area: pie;
-    background-color: rgb(238, 146, 89);
+    background-image: linear-gradient(to right, rgb(241, 195, 193),rgb(238, 177, 139),rgb(238, 146, 89));
 }
 
 .barraprincipal{
-    background-color: rgb(238, 146, 89);
-    list-style: none;
+    background-image: linear-gradient(to right, rgb(241, 195, 193),rgb(238, 177, 139),rgb(238, 146, 89));    list-style: none;
     border: 3px solid black;
     font-style: sans-serif;
     font-size: 19px;
@@ -59,12 +58,14 @@ h1{
     text-align: center;
     text-decoration-line: underline;
     margin-bottom: 2%;
+
 }
 
 
 .textoindex{
     text-align:center;
     margin: 1%;
+    transform: skew(deg);
 }
 
 .textoindex__resaltado{
@@ -126,7 +127,7 @@ h1{
 .listafooter__elementos{
     display: block;
     border: 0 solid black;
-    width: 100px;
+    transform: scale(0.9,0.9);
     text-align: center;
 }
 
@@ -255,6 +256,61 @@ h1{
     list-style: none;
 }
 
+.galeria1{
+
+    display: flex;
+    width: 500px;
+    height: 300px;
+    border: solid 2px black;
+    margin: auto;
+    align-items: center;
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    animation-name: galeria1;
+    animation-duration: 50s;
+    -o-animation-timing-function: step-start;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes galeria1{
+    0%{
+       background-image: url(./Imagenes/Nakama.jpg);
+
+    }
+    10%{
+       background-image: url(./Imagenes/Toallones2.jfif);
+    }
+    20%{
+       background-image: url(./Imagenes/Toallones.jfif);
+    }
+    30%{
+       background-image: url(./Imagenes/Localinterno.PNG);
+    }
+    40%{
+       background-image: url(./Imagenes/Medias.png);
+    }
+    50%{
+       background-image: url(./Imagenes/Perfume.jpg);
+    }
+    60%{
+       background-image: url(./Imagenes/Perfumesvarios.jpg);
+    }
+    70%{
+       background-image: url(./Imagenes/Repasadores.PNG);
+    }
+    80%{
+       background-image: url(./Imagenes/Sabanaslocal.PNG);
+    }
+    90%{
+       background-image: url(./Imagenes/Varioslocal.PNG);
+    }
+    100%{
+       background-image: url(./Imagenes/Nakama.jpg);
+    }
+}
+
 .galeria{
 display: flex;
 align-items: center;
@@ -302,6 +358,7 @@ border: 3px solid black;
     padding: 1%;
 }
 
+
 @media only screen and (max-width:425px){
     h1{
         margin-bottom:8%;}
@@ -333,6 +390,14 @@ border: 3px solid black;
 @media screen and (max-width:760px) {
     .galeria{
         width: 300px;
+    }
+    
+}
+@media screen and (max-width:760px) {
+    .galeria1{
+        width: 250px;
+        height: 250px;
+        background-size: 250px 250px;
     }
     
 }
