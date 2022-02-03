@@ -1,0 +1,35 @@
+[33mcommit 85daca706019642655cbd8a87fd6fb58363a7aa7[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Matías Maldonado <maldonadotempestti@gmail.com>
+Date:   Tue Feb 1 21:41:13 2022 -0300
+
+    Agregado de animacion, gradientes y transforms-borrar skew en textoindex
+
+[33mcommit 4a43bd6b0283cec0962e7c05d19d7e7d644aa4aa[m
+Author: Matías Maldonado <maldonadotempestti@gmail.com>
+Date:   Tue Feb 1 19:09:03 2022 -0300
+
+    Prueba y creacion de rama master
+
+[33mcommit cab1c2a23c93ae87bf7aae6f014c8f636e92437f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Matías Maldonado <maldonadotempestti@gmail.com>
+Date:   Mon Jan 31 00:25:33 2022 -0300
+
+    modificaciones de entrega de responsive, cambio logo wp, modificacion a y clases
+
+[33mcommit 66dbf1cd6679681391208c79f93b4b09dc5712dd[m
+Author: Matías Maldonado <maldonadotempestti@gmail.com>
+Date:   Tue Jan 25 22:21:40 2022 -0300
+
+    Eliminar carpeta Wireframe
+
+[33mcommit fa7e3d0fe6cc7d17cb9d749e65670c1fc345ffa6[m
+Author: Matías Maldonado <maldonadotempestti@gmail.com>
+Date:   Tue Jan 25 21:26:22 2022 -0300
+
+    Proyecto inicial
+
+[33mcommit bda8511310bfd2081592574b60f8d68c722e043a[m
+Author: matimaldonado <98433716+matimaldonado@users.noreply.github.com>
+Date:   Tue Jan 25 20:52:27 2022 -0300
+
+    Initial commit

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://kit.fontawesome.com/156325af43.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
     <title>Productos</title>
 </head>
 <body>
@@ -13,18 +15,28 @@
             <img class="imgNakama" src="../Imagenes/Nakama.jpg" alt="Logo marca">
         </div>
         
-        <nav>
+        <nav class="barraprincipal nav nav-pills nav-fill">
+            <a class="nav-link text-dark" aria-current="page" href="../Index.html">Inicio</a>
+            <a class="nav-link text-dark" href="/Páginas/Conocenos.html">Conocenos</a>
+            <a class="nav-link active bg-warning text-dark" href="/Páginas/Productos.html">Productos</a>
+            <a class="nav-link text-dark" href="/Páginas/Ofertas.html">Ofertas</a>
+            <a class="nav-link text-dark" href="/Páginas/Contacto.html">Contacto</a>
+            
+          </nav>
+
+<!--          <nav class="navegadorprincipal">
             <ul class="barraprincipal">
-                <li class="barra"><a href="../Index.html">Inicio</a></li>
-                <li class="barra"><a href="./Conocenos.html">Conocenos</a></li>
-                <li class="barra"><a href="./Productos.html">Productos</a></li>
-                <li class="barra"><a href="./Ofertas.html">Ofertas</a></li>
-                <li class="barra"><a href="./Contacto.html">Contacto</a></li>
+                <li class="barra"><a href="./Index.html">Inicio</a></li>
+                <li class="barra"><a href="./Páginas/Conocenos.html">Conocenos</a></li>
+                <li class="barra"><a href="./Páginas/Productos.html">Productos</a></li>
+                <li class="barra"><a href="./Páginas/Ofertas.html">Ofertas</a></li>
+                <li class="barra"><a href="./Páginas/Contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
       <!-- Fin del header -->
     <main>
+        
         <h1>Nuestros productos.</h1>
 
         <section class="galeria">
@@ -46,8 +58,55 @@
 
         </section>
 
+        <section class="fluid-container">
+
+            <p class="h2">Variedades</p>
+
+            <p class="mx-auto"> En nuestro local, encontrá una gran variedad de productos para el uso del hogar o para uso personal.
+            Trabajamos con marcas de gran calidad, para que en cada elemento tengas el mejor confort y calidad en cada uso </p>
+            
+            <div class="row">
+                <p class="h3">Manteles</p>
+                <p class="col-6">Contamos con una gran varidedad de tamaños y motivos, con rayas, lunares, lisos, para fiesta y para el día a día. 
+                   De algodon, lino, plástico y la mejor confección, para que puedas estilizar y proteger tu mesa.
+                </p>
+                <img class="col-6 imgproductos" src="../Imagenes/Manteles.jfif" alt="Manteles con motivos">
+            </div>
+            
+            <div class="row">  
+                 <p class="h3">Perfumes</p>
+                <p class="col-6">¿Te gusta resaltar por tu aroma?
+                   Podés encontrar una gran variedad de aromas en los distintos perfumes. Tanto para hombre, mujer, niños, con las mejores marcas para vos.
+                   Tambien disponemos de perfumes para tu ropa o para los diversos ambientes de tu hogar.
+                </p>
+                <img class="imgproductos col-6" src="/Imagenes/Perfumesvarios.jpg" alt="perfumesNatura">
+            </div>
+            
+            <div class="row">  
+                <p class="h3">Sabanas</p>
+                <p class="col-6">La mejor suavidad para tu descanso, primeras marcas, diversos tamaños y motivos, para que puedas convinar con todos los rincones de tu habitación.</p>
+                <img class="imgproductos col-6" src="/Imagenes/Sabanaslocal.PNG" alt="Sabanas en local">
+            </div>
+            
+            <div class="row">  
+                <p class="h3">Toallones</p>
+                <p class="col-6">De todos los tamaños, para que puedas lucir de la mejor manera en la pile o sentir la suavidad en el baño del hogar.
+                   Y para los pequeños del hogar, batas con motivos, princesas, vaqueros, astronautas, animales y todos los favoritos, para que puedan jugar y seguir ampliando su imaginación en cada momento.</p>
+                <img class="imgproductos col-6" src="/Imagenes/Toallones.jfif" alt="Toallones varios">
+            </div>
+            
+            <div class="row"> 
+                <p class="h3">Varios</p>   
+                <p class="col-6">Tambien podes encontrar ropa interior para cada miembro de la familia, medias, boxer, bombachas con la mejor tela y la mejor comodidad.
+
+                   Necesitas regalos, tenemos disponibles hermosos almohadones con formas, unicornio y tigres son algunos de los modelos que podes encontrar y disfrutar.
+                </p>
+                <img class="imgproductos col-6" src="/Imagenes/Varioslocal.PNG" alt="Varios elementos local">  
+            </div>
+    </section>
+
         <h2 class="subtituloproductos">Precios por productos.</h2>
-        
+     
         <table class="tablaproductos" border="5px" celpadding="10" cellspacing="10">
             <th>Fecha</th>
             <th>Productos</th>
@@ -72,21 +131,22 @@
     </main>
     <footer>
         <div class="fin">
-            <ul class="listafooter">
-                <li class="listafooter__elementos"><a href="https://www.facebook.com/marisa.tempestti" target="_blank"><i class="fab fa-facebook-square fa-4x facebook" ></i></a></li>
-                <li class="listafooter__elementos"><a href="https://www.instagram.com/nakama_mt/" target="_blank"><i class="fab fa-instagram-square fa-4x instagram"></i></a></li>
-                <li class="listafooter__elementos"><a href="https://wa.me/+5492615402896" target="_blank"><i class="fab fa-whatsapp-square fa-4x whatsapp"></i></a></li>
-            
-            </ul>
+            <a class="logof" href="https://www.facebook.com/marisa.tempestti" target="_blank"><i class="fab fa-facebook-square fa-4x facebook" ></i></a>
+            <a class="logoi" href="https://www.instagram.com/nakama_mt/" target="_blank"><i class="fab fa-instagram-square fa-4x instagram"></i></a>
+            <a class="logow" href="https://wa.me/+5492615402896" target="_blank"><i class="fab fa-whatsapp-square fa-4x whatsapp"></i></a>            
 
-            <ul class="barraprincipal__inferior">
-                <li class="barrainferior"><a href="../Index.html">Inicio</a></li>
-                <li class="barrainferior"><a href="./Conocenos.html">Conocenos</a></li>
-                <li class="barrainferior"><a href="./Productos.html">Productos</a></li>
-                <li class="barrainferior"><a href="./Ofertas.html">Ofertas</a></li>
-                <li class="barrainferior"><a href="./Contacto.html">Contacto</a></li>
-            </ul>        
-        </div>
-    </footer> 
+
+<!--         <ul class="barraprincipal__inferior">
+            <li class="barrainferior"><a href="./Index.html">Inicio</a></li>
+            <li class="barrainferior"><a href="./Páginas/Conocenos.html">Conocenos</a></li>
+            <li class="barrainferior"><a href="./Páginas/Productos.html">Productos</a></li>
+            <li class="barrainferior"><a href="./Páginas/Ofertas.html">Ofertas</a></li>
+            <li class="barrainferior"><a href="./Páginas/Contacto.html">Contacto</a></li>
+        </ul> -->
+    </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </body>
 </html>
