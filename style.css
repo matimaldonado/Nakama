@@ -10,7 +10,7 @@ body{
     "cuerpo cuerpo cuerpo cuerpo"
     "pie pie pie pie" 
     ;
-    gap: 5%;
+    gap: 1%;
 }
 
 header{
@@ -47,8 +47,6 @@ footer{
     border: 3px solid black;
     font-style: sans-serif;
     font-size: 19px;
-/*     text-align: center;
-    justify-content: center; */
 }
 
 .barra{
@@ -64,7 +62,9 @@ footer{
     height:150px;
     width: 300px;
     margin: auto;
+    border-radius: 50%;
 }
+
 
 h1{
     text-align: center;
@@ -72,8 +72,6 @@ h1{
     margin-bottom: 1%;
 
 }
-
-
 .textoindex{
     text-align:center;
     margin: 1%;
@@ -98,6 +96,7 @@ h1{
     text-decoration: underline;
     margin:auto;
     margin-top: 2%;
+    margin-bottom: 2%;
     display: flex;
     justify-content: center;
 }
@@ -106,9 +105,12 @@ h1{
     background-color: rgb(238, 146, 89);
     margin: auto;
     border: 5px solid black;
-    margin-top: 2%;
+    margin-top: 1%;
 }
-
+td{
+    border: 2px solid black;
+    padding: 1%;
+}
 .fin{
     display: flex;
     justify-content: space-evenly;
@@ -166,6 +168,10 @@ h1{
     color: white;
 }
 
+.subconocenos{
+    text-decoration: underline;
+    margin-bottom: 2%;
+}
 
 .ofertas{
     border: 5px solid rgb(238, 146, 89);
@@ -246,6 +252,7 @@ h1{
     width: 450px;
     margin:auto;
     display: flex;
+    border-radius: 8%;
 }
 
 
@@ -325,15 +332,24 @@ h1{
     }
 }
 
+.imgconocenos{
+    width: 200px;
+    height: 200px;
+}
 .galeria{
 display: flex;
 align-items: center;
 margin: auto;
 width: 600px;
 border: 3px solid black;
+margin-bottom: 3%;
+
 }
 
-
+.subproductos{
+    margin-top: 6%;
+    text-decoration: underline;
+}
 .galeriaprincipal{
     display: flex;
     padding: 5px;
@@ -432,6 +448,7 @@ border: 3px solid black;
     width: 250px;
     }
 }
+
 a{
     text-decoration: none;
     color: black;
