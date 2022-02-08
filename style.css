@@ -171,8 +171,13 @@ td{
 .subconocenos{
     text-decoration: underline;
     margin-bottom: 2%;
+    margin-top: 2%;
 }
 
+.imgnosotras{
+    width: 300px;
+    height: 300px;
+}
 .ofertas{
     border: 5px solid rgb(238, 146, 89);
     margin: auto;
@@ -333,8 +338,8 @@ td{
 }
 
 .imgconocenos{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
 }
 .galeria{
 display: flex;
