@@ -1,0 +1,154 @@
+body{
+    background-image:linear-gradient(to top,rgb(247, 188, 151),rgb(248, 133, 62),rgb(248, 133, 62), rgb(238, 177, 139));
+    color: rgb(8, 7, 7);
+    font-family: 'Quicksand', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "cabecera cabecera cabecera cabecera"
+    "cuerpo cuerpo cuerpo cuerpo"
+    "cuerpo cuerpo cuerpo cuerpo"
+    "cuerpo cuerpo cuerpo cuerpo"
+    "pie pie pie pie" 
+    ;
+    gap: 1%;
+}
+
+header{
+    grid-area: cabecera;
+
+}
+main{
+    grid-area: cuerpo;
+}
+footer{
+    grid-area: pie;
+    background-image: linear-gradient(to right, rgb(241, 195, 193),rgb(238, 177, 139),rgb(238, 146, 89));
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Logo superior */
+.logoprincipalsuperior{
+    display: flex;
+}
+
+.imgNakama{
+    height:150px;
+    width: 300px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+/* Nav */
+.barraprincipal{
+    background-image: linear-gradient(to right, rgb(241, 195, 193),rgb(238, 177, 139),rgb(238, 146, 89));    list-style: none;
+    border: 3px solid black;
+    font-style: sans-serif;
+    font-size: 19px;
+}
+
+.nav-link{
+    color: black;
+}
+/* Titulos */
+h1{
+    text-align: center;
+    text-decoration-line: underline;
+    margin-bottom: 1%;
+
+}
+/* Pie de pagina */
+
+.fin{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.facebook {
+     color: rgb(17, 17, 150);
+     
+     &:hover .facebook{
+     color: white;
+    }
+}
+ 
+ .instagram{
+     color: rgb(188, 42, 141);
+ 
+    &:hover.instagram{
+     color: white;
+    }
+ }
+ 
+ .whatsapp{
+     color: rgb(13, 87, 13);
+    &:hover.whatsapp{
+     color: white;
+    }
+}
+
+/* Media queries */
+
+@media screen and (max-width:760px) {
+    .galeria{
+        width: 300px;
+    }
+    
+}
+@media screen and (max-width:760px) {
+    .galeria1{
+        width: 250px;
+        height: 250px;
+        background-size: 250px 250px;
+    }
+    
+}
+
+@media only screen and (max-width:600px) {
+    .mapa{
+        height: 300px;
+        width: 300px;
+    }
+    
+}
+
+
+@media only screen and (max-width:600px){
+.caption{
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    }
+}
+
+@media only screen and (max-width:425px){
+    h1{
+        margin-bottom:8%;}
+}
+
+@media only screen and (max-width:700px) {
+    .ofertas{
+        margin: auto;
+        display: block;
+        width: 300px;
+        overflow-x: scroll;
+     }
+
+    .ofertas::-webkit-scrollbar {
+        width: 12px;               
+    }
+
+    .ofertas::-webkit-scrollbar::-webkit-scrollbar-track {
+        background: rgb(238, 146, 89);        
+    }
+      
+    .ofertas::-webkit-scrollbar-thumb {
+        background-color: rgb(189, 184, 172);   
+        border-radius: 20px;       
+        border: 3px solid rgb(238, 146, 89);  
+    }
+
+}

@@ -1,0 +1,40 @@
+.paginadecontacto{
+    display: flex;
+    align-content: space-around;
+    padding: 2%;
+}
+.subtitulocontacto{
+        text-align: center;
+        text-decoration: underline;
+        padding: 1%;
+}
+
+.mapa{
+    height: 450px;
+    width: 450px;
+    margin:auto;
+    display: flex;
+    border-radius: 8%;
+}
+
+.formulario{
+    border: 5px solid rgb(238, 146, 89);
+    width: 300px;
+    height: 400px;
+    display: flex;
+    padding: 2%;
+    margin: auto;
+    justify-content: center;
+
+    &__tabla{
+        list-style: none;
+    }
+}
+
+.h2contacto{
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+

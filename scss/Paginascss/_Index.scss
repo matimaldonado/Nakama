@@ -1,0 +1,22 @@
+.galeria1
+   {
+       display: flex;
+       width: 500px;
+       height: 300px;
+       border: solid 2px black;
+       margin: auto;
+       align-items: center;
+       background-size: 500px 300px;
+       background-repeat: no-repeat;
+       animation-name: galeria1;
+       animation-duration: 50s;
+       -o-animation-timing-function: step-start;
+       animation-delay: 0.5s;
+       animation-iteration-count: infinite;
+   }
+
+ .textoindex{
+      text-align:center;
+      margin: 1%;
+  }
+  
