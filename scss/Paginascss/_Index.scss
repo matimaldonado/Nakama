@@ -20,3 +20,41 @@
       margin: 1%;
   }
   
+    @keyframes galeria1{
+       0%{
+          background-image: url(/Imagenes/Nakama.jpg);
+        }
+       10%{
+          background-image: url(/Imagenes/Toallones2.jfif);
+       }
+       20%{
+          background-image: url(/Imagenes/Toallones.jfif);
+       }
+       30%{
+          background-image: url(/Imagenes/Localinterno.PNG);
+       }
+       40%{
+          background-image: url(/Imagenes/Medias.png);
+       }
+       50%{
+          background-image: url(/Imagenes/Perfume.jpg);
+       }
+       60%{
+          background-image: url(/Imagenes/Perfumesvarios.jpg);
+       }
+       70%{
+          background-image: url(/Imagenes/Repasadores.PNG);
+       }
+       80%{
+          background-image: url(/Imagenes/Sabanaslocal.PNG);
+       }
+       90%{
+          background-image: url(/Imagenes/Varioslocal.PNG);
+       }
+       100%{
+          background-image: url(/Imagenes/Nakama.jpg);
+       }
+ }
+ 
+ 
+ 
