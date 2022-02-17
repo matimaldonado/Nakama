@@ -1,3 +1,4 @@
+/* Mixins */
 body {
   background-image: linear-gradient(to top, #f7bc97, #f8853e, #f8853e, #eeb18b);
   color: #080707;
@@ -18,7 +19,7 @@ footer {
 
 a {
   text-decoration: none;
-  color: black; }
+  color: #080707; }
 
 /* Logo superior */
 .logoprincipalsuperior {
@@ -34,12 +35,12 @@ a {
 .barraprincipal {
   background-image: linear-gradient(to right, #f1c3c1, #eeb18b, #ee9259);
   list-style: none;
-  border: 3px solid black;
+  border: 3px solid #080707;
   font-style: sans-serif;
   font-size: 19px; }
 
 .nav-link {
-  color: black; }
+  color: #080707; }
 
 /* Titulos */
 h1 {
@@ -74,8 +75,8 @@ h1 {
 
 @media screen and (max-width: 760px) {
   .galeria1 {
-    width: 250px;
     height: 250px;
+    width: 250px;
     background-size: 250px 250px; } }
 
 @media only screen and (max-width: 600px) {
@@ -95,25 +96,23 @@ h1 {
 
 @media only screen and (max-width: 700px) {
   .ofertas {
-    margin: auto;
-    display: block;
     width: 300px;
-    overflow-x: scroll; }
+    overflow-x: scroll;
+    margin: auto;
+    display: block; }
   .ofertas::-webkit-scrollbar {
     width: 12px; }
   .ofertas::-webkit-scrollbar::-webkit-scrollbar-track {
     background: #ee9259; }
   .ofertas::-webkit-scrollbar-thumb {
-    background-color: #bdb8ac;
+    background-color: #f1c3c1;
     border-radius: 20px;
     border: 3px solid #ee9259; } }
 
 .galeria1 {
-  display: flex;
-  width: 500px;
   height: 300px;
+  width: 500px;
   border: solid 2px black;
-  margin: auto;
   align-items: center;
   background-size: 500px 300px;
   background-repeat: no-repeat;
@@ -121,7 +120,9 @@ h1 {
   animation-duration: 50s;
   -o-animation-timing-function: step-start;
   animation-delay: 0.5s;
-  animation-iteration-count: infinite; }
+  animation-iteration-count: infinite;
+  margin: auto;
+  display: flex; }
 
 .textoindex {
   text-align: center;
@@ -157,12 +158,12 @@ h1 {
   margin-top: 2%; }
 
 .imgconocenos {
-  width: 300px;
-  height: 250px; }
+  height: 250px;
+  width: 300px; }
 
 .imgnosotras {
-  width: 300px;
-  height: 300px; }
+  height: 300px;
+  width: 300px; }
 
 .paginadecontacto {
   display: flex;
@@ -177,31 +178,31 @@ h1 {
 .mapa {
   height: 450px;
   width: 450px;
+  border-radius: 8%;
   margin: auto;
-  display: flex;
-  border-radius: 8%; }
+  display: flex; }
 
 .formulario {
   border: 5px solid #ee9259;
-  width: 300px;
   height: 400px;
-  display: flex;
+  width: 300px;
   padding: 2%;
+  justify-content: center;
   margin: auto;
-  justify-content: center; }
+  display: flex; }
   .formulario__tabla {
     list-style: none; }
 
 .h2contacto {
   text-decoration: underline;
-  display: flex;
   justify-content: center;
-  margin: auto; }
+  margin: auto;
+  display: flex; }
 
 .galeria {
+  margin: auto;
   display: flex;
   align-items: center;
-  margin: auto;
   width: 600px;
   border: 3px solid black;
   margin-bottom: 3%; }
@@ -217,7 +218,7 @@ h1 {
     .galeriaprincipal::-webkit-scrollbar-track {
       background: #ee9259; }
     .galeriaprincipal::-webkit-scrollbar-thumb {
-      background-color: #bdb8ac;
+      background-color: #f1c3c1;
       border-radius: 20px;
       border: 3px solid #ee9259; }
 
@@ -232,24 +233,24 @@ h1 {
   text-decoration: underline; }
 
 .imgproductos {
-  width: 300px;
-  height: 300px; }
+  height: 300px;
+  width: 300px; }
 
 .subtituloproductos {
   text-decoration: underline;
   margin: auto;
+  display: flex;
   margin-top: 2%;
   margin-bottom: 2%;
-  display: flex;
   justify-content: center; }
 
 .tablaproductos {
   background-color: #ee9259;
   margin: auto;
-  border: 5px solid black;
+  border: 5px solid #080707;
   margin-top: 1%; }
   .tablaproductos .td {
-    border: 2px solid black;
+    border: 2px solid #080707;
     padding: 1%; }
 
 .caption {

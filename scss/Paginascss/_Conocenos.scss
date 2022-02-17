@@ -5,11 +5,10 @@
 }
 
 .imgconocenos{
-    width: 300px;
-    height: 250px;
+
+    @include medidas (250px, 300px);
 }
 
 .imgnosotras{
-    width: 300px;
-    height: 300px;
+    @include medidas (300px, 300px);
 }

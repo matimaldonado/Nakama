@@ -27,7 +27,7 @@ footer{
 
 a{
     text-decoration: none;
-    color: black;
+    color: map-get($colores , dark );
 }
 
 /* Logo superior */
@@ -36,8 +36,7 @@ a{
 }
 
 .imgNakama{
-    height:150px;
-    width: 300px;
+    @include medidas (150px, 300px);
     margin: auto;
     border-radius: 50%;
 }
@@ -45,13 +44,13 @@ a{
 /* Nav */
 .barraprincipal{
     background-image: linear-gradient(to right, rgb(241, 195, 193),rgb(238, 177, 139),rgb(238, 146, 89));    list-style: none;
-    border: 3px solid black;
+    border: 3px solid map-get($colores , dark );
     font-style: sans-serif;
     font-size: 19px;
 }
 
 .nav-link{
-    color: black;
+    color: map-get($colores , dark );
 }
 /* Titulos */
 h1{
@@ -68,7 +67,7 @@ h1{
 }
 
 .facebook {
-     color: rgb(17, 17, 150);
+    color: map-get($colores , face );
      
      &:hover .facebook{
      color: white;
@@ -76,7 +75,7 @@ h1{
 }
  
  .instagram{
-     color: rgb(188, 42, 141);
+    color: map-get($colores , insta );
  
     &:hover.instagram{
      color: white;
@@ -84,7 +83,7 @@ h1{
  }
  
  .whatsapp{
-     color: rgb(13, 87, 13);
+    color: map-get($colores , wp );
     &:hover.whatsapp{
      color: white;
     }
@@ -100,8 +99,7 @@ h1{
 }
 @media screen and (max-width:760px) {
     .galeria1{
-        width: 250px;
-        height: 250px;
+        @include medidas (250px, 250px);
         background-size: 250px 250px;
     }
     
@@ -109,8 +107,7 @@ h1{
 
 @media only screen and (max-width:600px) {
     .mapa{
-        height: 300px;
-        width: 300px;
+        @include medidas (300px, 300px);
     }
     
 }
@@ -119,8 +116,7 @@ h1{
 @media only screen and (max-width:600px){
 .caption{
     margin: auto;
-    height: 250px;
-    width: 250px;
+    @include medidas (250px, 250px);
     }
 }
 
@@ -131,10 +127,10 @@ h1{
 
 @media only screen and (max-width:700px) {
     .ofertas{
-        margin: auto;
-        display: block;
+
         width: 300px;
         overflow-x: scroll;
+        @include flexbox (auto,block)
      }
 
     .ofertas::-webkit-scrollbar {
@@ -142,13 +138,15 @@ h1{
     }
 
     .ofertas::-webkit-scrollbar::-webkit-scrollbar-track {
-        background: rgb(238, 146, 89);        
+        background:map-get($colores , primario );
+        ;        
     }
       
     .ofertas::-webkit-scrollbar-thumb {
-        background-color: rgb(189, 184, 172);   
+        background-color: map-get($colores , secundario );   
         border-radius: 20px;       
-        border: 3px solid rgb(238, 146, 89);  
+        border: 3px solid map-get($colores , primario );  
     }
 
 }
+

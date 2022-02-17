@@ -1,11 +1,9 @@
 .caption{
-    height: 350px;
-    width: 350px;
+    @include medidas (350px, 350px);
     margin: auto;
 }
 
 .text-white{
     margin: auto;
-    height: 20px;
-    width: 250px;
+    @include medidas (20px, 250px);
  }

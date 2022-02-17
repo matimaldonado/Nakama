@@ -1,7 +1,6 @@
 .galeria{
-    display: flex;
+    @include flexbox (auto,flex);
     align-items: center;
-    margin: auto;
     width: 600px;
     border: 3px solid black;
     margin-bottom: 3%;
@@ -22,20 +21,19 @@
         }
 
         &::-webkit-scrollbar-track {
-            background: rgb(238, 146, 89);        
+            background:map-get($colores , primario );  
         }
         
         &::-webkit-scrollbar-thumb {
-            background-color: rgb(189, 184, 172);   
+            background-color: map-get($colores , secundario );   
             border-radius: 20px;       
-            border: 3px solid rgb(238, 146, 89);  
+            border: 3px solid map-get($colores , primario );  
         }
     }
 
 }
 .fotoproductos{
-    height: 250px;
-    width: 250px;
+    @include medidas (250px, 250px);
     margin: 1%;
     object-fit: cover;
 }
@@ -46,27 +44,25 @@
 }
 
 .imgproductos{
-    width: 300px;
-    height: 300px;
+    @include medidas (300px, 300px);
 }
 
 .subtituloproductos{
     text-decoration: underline;
-    margin:auto;
+    @include flexbox (auto,flex);
     margin-top: 2%;
     margin-bottom: 2%;
-    display: flex;
     justify-content: center;
 }
 
 .tablaproductos{
-    background-color: rgb(238, 146, 89);
+    background-color: map-get($colores , primario );
     margin: auto;
-    border: 5px solid black;
+    border: 5px solid map-get($colores , dark );
     margin-top: 1%;
 
     .td{
-    border: 2px solid black;
+    border: 2px solid map-get($colores , dark );
     padding: 1%;
     }
 }

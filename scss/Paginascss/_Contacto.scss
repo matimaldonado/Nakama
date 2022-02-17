@@ -10,21 +10,17 @@
 }
 
 .mapa{
-    height: 450px;
-    width: 450px;
-    margin:auto;
-    display: flex;
+    @include medidas (450px, 450px);
     border-radius: 8%;
+    @include flexbox (auto,flex);
 }
 
 .formulario{
-    border: 5px solid rgb(238, 146, 89);
-    width: 300px;
-    height: 400px;
-    display: flex;
+    border: 5px solid map-get($colores , primario );
+    @include medidas (400px, 300px);
     padding: 2%;
-    margin: auto;
     justify-content: center;
+    @include flexbox (auto,flex);
 
     &__tabla{
         list-style: none;
@@ -33,8 +29,7 @@
 
 .h2contacto{
     text-decoration: underline;
-    display: flex;
     justify-content: center;
-    margin: auto;
+    @include flexbox (auto,flex);
 }
 

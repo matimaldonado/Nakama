@@ -1,0 +1,20 @@
+/* Mixins */
+
+@mixin flexbox ($auto, $flex){
+    margin: $auto;
+    display: $flex;
+}
+@mixin medidas ($alto, $ancho){
+    height: $alto;
+    width: $ancho;
+}
+
+$colores:(
+    primario: rgb(238, 146, 89) ,
+    dark: rgb(8, 7, 7),
+    secundario: rgb(241, 195, 193),
+    tercero: rgb(238, 177, 139),
+    face:rgb(17, 17, 150),
+    insta:rgb(188, 42, 141),
+    wp:rgb(13, 87, 13),
+);
