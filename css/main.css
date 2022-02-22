@@ -1,10 +1,11 @@
 /* Mixins */
+/* General */
 body {
   background-image: linear-gradient(to top, #f7bc97, #f8853e, #f8853e, #eeb18b);
   color: #080707;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Mali', cursive;
   display: grid;
-  grid-template-areas: "cabecera cabecera cabecera cabecera" "cuerpo cuerpo cuerpo cuerpo" "cuerpo cuerpo cuerpo cuerpo" "cuerpo cuerpo cuerpo cuerpo" "pie pie pie pie";
+  grid-template-areas: "cabecera cabecera cabecera cabecera" "cuerpo cuerpo cuerpo cuerpo" "cuerpo cuerpo cuerpo cuerpo" "cuerpo cuerpo cuerpo cuerpo" "pie pie pie pie" "pie pie pie pie";
   gap: 1%; }
 
 header {
@@ -15,7 +16,7 @@ main {
 
 footer {
   grid-area: pie;
-  background-image: linear-gradient(to right, #f1c3c1, #eeb18b, #ee9259); }
+  background-image: linear-gradient(to right, #eeb18b, #ee9259); }
 
 a {
   text-decoration: none;
@@ -37,7 +38,7 @@ a {
   list-style: none;
   border: 3px solid #080707;
   font-style: sans-serif;
-  font-size: 19px; }
+  font-size: 26px; }
 
 .nav-link {
   color: #080707; }
@@ -46,12 +47,14 @@ a {
 h1 {
   text-align: center;
   text-decoration-line: underline;
-  margin-bottom: 1%; }
+  margin-bottom: 2%;
+  margin-top: 1%; }
 
 /* Pie de pagina */
 .fin {
   display: flex;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  margin-top: 1%; }
 
 .facebook {
   color: #111196; }
@@ -68,197 +71,221 @@ h1 {
   .whatsapp:hover.whatsapp {
     color: white; }
 
+.navfinal {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2%; }
+  .navfinaltxt {
+    text-decoration: none;
+    font-size: 15px;
+    color: black; }
+    .navfinaltxt:hover.navfinaltxt {
+      text-decoration: none;
+      color: black; }
+
+.cierre {
+  margin-top: 1%;
+  text-align: center;
+  font-size: 15px;
+  border-top: solid 5px #f1c3c1; }
+
 /* Media queries */
-@media screen and (max-width: 760px) {
-  .galeria {
-    width: 300px; } }
-
-@media screen and (max-width: 760px) {
-  .galeria1 {
-    height: 250px;
-    width: 250px;
-    background-size: 250px 250px; } }
-
-@media only screen and (max-width: 600px) {
-  .mapa {
-    height: 300px;
-    width: 300px; } }
-
-@media only screen and (max-width: 600px) {
-  .caption {
-    margin: auto;
-    height: 250px;
-    width: 250px; } }
-
 @media only screen and (max-width: 425px) {
   h1 {
     margin-bottom: 8%; } }
 
-@media only screen and (max-width: 700px) {
-  .ofertas {
-    width: 300px;
-    overflow-x: scroll;
-    margin: auto;
-    display: block; }
-  .ofertas::-webkit-scrollbar {
-    width: 12px; }
-  .ofertas::-webkit-scrollbar::-webkit-scrollbar-track {
-    background: #ee9259; }
-  .ofertas::-webkit-scrollbar-thumb {
-    background-color: #f1c3c1;
-    border-radius: 20px;
-    border: 3px solid #ee9259; } }
-
-.galeria1 {
+/* INDEX */
+.logoindex {
   height: 300px;
   width: 500px;
-  border: solid 2px black;
-  align-items: center;
-  background-size: 500px 300px;
-  background-repeat: no-repeat;
-  animation-name: galeria1;
-  animation-duration: 50s;
-  -o-animation-timing-function: step-start;
-  animation-delay: 0.5s;
-  animation-iteration-count: infinite;
+  border: solid 3px black;
   margin: auto;
-  display: flex; }
+  display: flex;
+  padding: 2px; }
+
+.inicionakama {
+  height: 290px;
+  width: 490px;
+  align-items: center; }
 
 .textoindex {
   text-align: center;
   margin: 1%; }
 
-@keyframes galeria1 {
-  0% {
-    background-image: url(../Imagenes/Nakama.jpg); }
-  10% {
-    background-image: url(../Imagenes/Toallones2.jfif); }
-  20% {
-    background-image: url(../Imagenes/Toallones.jfif); }
-  30% {
-    background-image: url(../Imagenes/Localinterno.PNG); }
-  40% {
-    background-image: url(../Imagenes/Medias.png); }
-  50% {
-    background-image: url(../Imagenes/Perfume.jpg); }
-  60% {
-    background-image: url(../Imagenes/Perfumesvarios.jpg); }
-  70% {
-    background-image: url(../Imagenes/Repasadores.PNG); }
-  80% {
-    background-image: url(../Imagenes/Sabanaslocal.PNG); }
-  90% {
-    background-image: url(../Imagenes/Varioslocal.PNG); }
-  100% {
-    background-image: url(../Imagenes/Nakama.jpg); } }
+.previewindex {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly; }
 
+.card {
+  height: 320px;
+  width: 200px;
+  align-content: center;
+  background-color: #eeb18b;
+  padding: 10px; }
+  .card:hover {
+    background-color: #bb6631; }
+  .cardImg {
+    margin: auto;
+    height: 200px;
+    width: 200px; }
+
+@media only screen and (max-width: 700px) {
+  .logoindex {
+    height: 200px;
+    width: 300px; }
+  .inicionakama {
+    height: 190px;
+    width: 290px; }
+  .previewindex {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; } }
+
+/* Conocenos */
 .subconocenos {
   text-decoration: underline;
   margin-bottom: 2%;
-  margin-top: 2%; }
+  margin-top: 2%;
+  margin-left: 5%; }
 
-.imgconocenos {
+.imgjapones {
   height: 250px;
-  width: 300px; }
+  width: 300px;
+  margin-left: 5%; }
 
 .imgnosotras {
-  height: 300px;
-  width: 300px; }
+  height: 250px;
+  width: 300px;
+  margin-left: 5%; }
 
-.paginadecontacto {
+.textojapones {
+  margin-top: 2%;
+  margin-left: 3%; }
+
+.textonosotras {
+  margin-top: 4%;
+  margin-left: 3%; }
+
+@media only screen and (max-width: 700px) {
+  .textojapones {
+    margin: auto; }
+  .textonosotras {
+    margin: auto; } }
+
+/* Contacto */
+.paginacontacto {
   display: flex;
-  align-content: space-around;
+  justify-content: space-evenly;
   padding: 2%; }
 
 .subtitulocontacto {
-  text-align: center;
   text-decoration: underline;
-  padding: 1%; }
+  padding: 2%; }
 
 .mapa {
   height: 450px;
   width: 450px;
-  border-radius: 8%;
-  margin: auto;
-  display: flex; }
+  border-radius: 8%; }
 
 .formulario {
   border: 5px solid #ee9259;
   height: 400px;
   width: 300px;
-  padding: 2%;
-  justify-content: center;
-  margin: auto;
-  display: flex; }
+  padding: 2%; }
   .formulario__tabla {
     list-style: none; }
 
 .h2contacto {
   text-decoration: underline;
-  justify-content: center;
-  margin: auto;
-  display: flex; }
+  padding: 2%; }
 
-.galeria {
-  margin: auto;
-  display: flex;
-  align-items: center;
-  width: 600px;
-  border: 3px solid black;
-  margin-bottom: 3%; }
-  .galeria a {
-    font-size: 40px;
-    margin: auto; }
-  .galeriaprincipal {
+@media only screen and (max-width: 600px) {
+  .paginacontacto {
     display: flex;
-    padding: 5px;
-    overflow-x: scroll; }
-    .galeriaprincipal::-webkit-scrollbar {
-      width: 12px; }
-    .galeriaprincipal::-webkit-scrollbar-track {
-      background: #ee9259; }
-    .galeriaprincipal::-webkit-scrollbar-thumb {
-      background-color: #f1c3c1;
-      border-radius: 20px;
-      border: 3px solid #ee9259; }
+    flex-wrap: wrap;
+    padding: 2%; }
+  .mapa {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin: auto; }
+  .formulario {
+    display: flex;
+    margin: auto; } }
 
-.fotoproductos {
-  height: 250px;
-  width: 250px;
-  margin: 1%;
-  object-fit: cover; }
-
-.subproductos {
-  margin-top: 6%;
-  text-decoration: underline; }
-
-.imgproductos {
-  height: 300px;
-  width: 300px; }
-
-.subtituloproductos {
-  text-decoration: underline;
+.imgprod {
+  height: 500px;
+  width: 800px;
   margin: auto;
   display: flex;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  justify-content: center; }
+  align-content: center; }
 
-.tablaproductos {
-  background-color: #ee9259;
-  margin: auto;
-  border: 5px solid #080707;
-  margin-top: 1%; }
-  .tablaproductos .td {
-    border: 2px solid #080707;
-    padding: 1%; }
-
-.caption {
-  height: 350px;
-  width: 350px;
+.galeria1 {
+  height: 600px;
+  width: 1000px;
+  display: flex;
   margin: auto; }
 
-.text-white {
-  margin: auto;
-  height: 20px;
-  width: 250px; }
+.carousel-caption {
+  background-image: linear-gradient(to right, #ee9259, white, #ee9259);
+  opacity: 80%;
+  border-radius: 5%;
+  color: #080707;
+  height: 200px;
+  width: 600px;
+  align-content: center;
+  margin: auto; }
+
+@media only screen and (max-width: 450px) {
+  .galeria1 {
+    height: 600px;
+    width: 319px;
+    margin-bottom: 10px; }
+  .imgprod {
+    height: 400px;
+    width: 280px; }
+  .carousel-caption {
+    height: 100px;
+    width: 260px; } }
+
+/* Ofertas */
+.galofertas {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 20px;
+  justify-content: center; }
+
+.divofertas {
+  position: relative; }
+
+.imgofertas {
+  height: 300px;
+  width: 300px;
+  position: relative; }
+
+.textoofertas {
+  background-color: #bb6631;
+  color: #080707;
+  display: flex;
+  justify-content: center;
+  border: solid 2px black;
+  opacity: 75%;
+  font-size: 30px; }
+
+@media only screen and (max-width: 700px) {
+  .galofertas {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 5%; }
+  .divofertas {
+    margin: auto;
+    padding: 3%; }
+  .textoofertas {
+    padding: 5%;
+    margin: auto;
+    height: 150px;
+    width: 300px; }
+  .imgofertas {
+    margin: auto; } }

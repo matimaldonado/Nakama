@@ -1,13 +1,15 @@
+/* General */
 body{
     background-image:linear-gradient(to top,rgb(247, 188, 151),rgb(248, 133, 62),rgb(248, 133, 62), rgb(238, 177, 139));
     color: rgb(8, 7, 7);
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Mali', cursive;
     display: grid;
     grid-template-areas: 
     "cabecera cabecera cabecera cabecera"
     "cuerpo cuerpo cuerpo cuerpo"
     "cuerpo cuerpo cuerpo cuerpo"
     "cuerpo cuerpo cuerpo cuerpo"
+    "pie pie pie pie"
     "pie pie pie pie" 
     ;
     gap: 1%;
@@ -22,7 +24,7 @@ main{
 }
 footer{
     grid-area: pie;
-    background-image: linear-gradient(to right, rgb(241, 195, 193),rgb(238, 177, 139),rgb(238, 146, 89));
+    background-image: linear-gradient(to right,rgb(238, 177, 139),rgb(238, 146, 89));
 }
 
 a{
@@ -31,6 +33,7 @@ a{
 }
 
 /* Logo superior */
+
 .logoprincipalsuperior{
     display: flex;
 }
@@ -46,24 +49,28 @@ a{
     background-image: linear-gradient(to right, rgb(241, 195, 193),rgb(238, 177, 139),rgb(238, 146, 89));    list-style: none;
     border: 3px solid map-get($colores , dark );
     font-style: sans-serif;
-    font-size: 19px;
+    font-size: 26px;
 }
 
 .nav-link{
     color: map-get($colores , dark );
 }
+
 /* Titulos */
 h1{
     text-align: center;
     text-decoration-line: underline;
-    margin-bottom: 1%;
-
+    margin-bottom: 2%;
+    margin-top: 1%;
+    
 }
+
 /* Pie de pagina */
 
 .fin{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 1%;
 }
 
 .facebook {
@@ -89,64 +96,37 @@ h1{
     }
 }
 
+.navfinal{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2%;
+
+    &txt{
+            text-decoration: none;
+            font-size: 15px;
+            color: black;
+
+        &:hover.navfinaltxt{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.cierre{
+    margin-top: 1%;
+    text-align: center;
+    font-size: 15px;
+    border-top: solid 5px map-get($colores , secundario );
+
+    }
+
+
 /* Media queries */
 
-@media screen and (max-width:760px) {
-    .galeria{
-        width: 300px;
-    }
-    
-}
-@media screen and (max-width:760px) {
-    .galeria1{
-        @include medidas (250px, 250px);
-        background-size: 250px 250px;
-    }
-    
-}
-
-@media only screen and (max-width:600px) {
-    .mapa{
-        @include medidas (300px, 300px);
-    }
-    
-}
-
-
-@media only screen and (max-width:600px){
-.caption{
-    margin: auto;
-    @include medidas (250px, 250px);
-    }
-}
 
 @media only screen and (max-width:425px){
     h1{
         margin-bottom:8%;}
-}
-
-@media only screen and (max-width:700px) {
-    .ofertas{
-
-        width: 300px;
-        overflow-x: scroll;
-        @include flexbox (auto,block)
-     }
-
-    .ofertas::-webkit-scrollbar {
-        width: 12px;               
-    }
-
-    .ofertas::-webkit-scrollbar::-webkit-scrollbar-track {
-        background:map-get($colores , primario );
-        ;        
-    }
-      
-    .ofertas::-webkit-scrollbar-thumb {
-        background-color: map-get($colores , secundario );   
-        border-radius: 20px;       
-        border: 3px solid map-get($colores , primario );  
-    }
-
 }
 

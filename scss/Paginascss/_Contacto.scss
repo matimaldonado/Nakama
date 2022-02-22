@@ -1,26 +1,26 @@
-.paginadecontacto{
+/* Contacto */
+
+.paginacontacto{
     display: flex;
-    align-content: space-around;
+    justify-content: space-evenly;
     padding: 2%;
 }
 .subtitulocontacto{
-        text-align: center;
         text-decoration: underline;
-        padding: 1%;
+        padding: 2%;
 }
 
 .mapa{
     @include medidas (450px, 450px);
     border-radius: 8%;
-    @include flexbox (auto,flex);
+
 }
 
 .formulario{
     border: 5px solid map-get($colores , primario );
     @include medidas (400px, 300px);
     padding: 2%;
-    justify-content: center;
-    @include flexbox (auto,flex);
+
 
     &__tabla{
         list-style: none;
@@ -29,7 +29,27 @@
 
 .h2contacto{
     text-decoration: underline;
-    justify-content: center;
-    @include flexbox (auto,flex);
+    padding: 2%;
+
 }
 
+@media only screen and (max-width:600px) {
+    .paginacontacto{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2%;
+       
+    }
+    .mapa{
+        @include medidas (300px, 300px);
+        display: flex;
+        margin: auto;
+     
+    }
+    
+    .formulario{
+        display: flex;
+        margin: auto;
+      
+    }
+}

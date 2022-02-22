@@ -1,68 +1,43 @@
-.galeria{
-    @include flexbox (auto,flex);
-    align-items: center;
-    width: 600px;
-    border: 3px solid black;
-    margin-bottom: 3%;
-
-    & a{
-        font-size: 40px;
-        margin: auto;
-    }
-
-    &principal{
-        display: flex;
-        padding: 5px;
-        overflow-x: scroll;
-
-        
-        &::-webkit-scrollbar {
-            width: 12px;               
-        }
-
-        &::-webkit-scrollbar-track {
-            background:map-get($colores , primario );  
-        }
-        
-        &::-webkit-scrollbar-thumb {
-            background-color: map-get($colores , secundario );   
-            border-radius: 20px;       
-            border: 3px solid map-get($colores , primario );  
-        }
-    }
-
-}
-.fotoproductos{
-    @include medidas (250px, 250px);
-    margin: 1%;
-    object-fit: cover;
-}
-
-.subproductos{
-    margin-top: 6%;
-    text-decoration: underline;
-}
-
-.imgproductos{
-    @include medidas (300px, 300px);
-}
-
-.subtituloproductos{
-    text-decoration: underline;
-    @include flexbox (auto,flex);
-    margin-top: 2%;
-    margin-bottom: 2%;
-    justify-content: center;
-}
-
-.tablaproductos{
-    background-color: map-get($colores , primario );
+.imgprod{
+    @include medidas (500px, 800px);
     margin: auto;
-    border: 5px solid map-get($colores , dark );
-    margin-top: 1%;
+    display: flex;
+    align-content: center;
+}
 
-    .td{
-    border: 2px solid map-get($colores , dark );
-    padding: 1%;
+.galeria1{
+    @include medidas (600px, 1000px);
+    display: flex;
+    margin: auto;
+}
+.carousel-caption{
+    background-image: linear-gradient(to right, rgb(238, 146, 89), rgb(255, 255, 255), rgb(238, 146, 89));
+    opacity: 80%;
+    border-radius: 5%;
+    color: map-get($colores , dark );
+    @include medidas (200px, 600px);
+    align-content: center;
+    margin: auto;
+
+}
+
+@media only screen and (max-width:450px) {
+    .galeria1{
+        @include medidas (600px, 319px);
+        margin-bottom: 10px;
+                 
     }
+    
+    .imgprod{
+        @include medidas (400px, 280px);
+
+        
+        
+
+    }
+   .carousel-caption{
+    @include medidas (100px, 260px);
+
+
+   }
 }
