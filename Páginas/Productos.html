@@ -21,30 +21,53 @@
         </div>
         
         <nav class="barraprincipal nav nav-pills nav-fill">
-            <a class="nav-link text-dark" aria-current="page" href="../index.html">Inicio</a>
-            <a class="nav-link text-dark" href="../Páginas/Conocenos.html">Conocenos</a>
-            <a class="nav-link active bg-warning text-dark" href="../Páginas/Productos.html">Productos</a>
-            <a class="nav-link text-dark" href="../Páginas/Ofertas.html">Ofertas</a>
-            <a class="nav-link text-dark" href="../Páginas/Contacto.html">Contacto</a>
+          <a class="nav-link text-dark" aria-current="page" href="../index.html">Inicio</a>
+          <a class="nav-link text-dark" href="../Páginas/Conocenos.html">Conocenos</a>
+          <a class="nav-link active bg-warning text-dark" href="../Páginas/Productos.html">Productos</a>
+          <a class="nav-link text-dark" href="../Páginas/Ofertas.html">Ofertas</a>
+          <a class="nav-link text-dark" href="../Páginas/Contacto.html">Contacto</a>
+
+
+          <nav class="botonhamburguesa navbar navbar-dark">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#barrahamburguesa" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+          </nav>
+
+          <div class="barrahamburguesa collapse" id="barrahamburguesa">
+              <div class="interiormenu"> 
+                <p class=menuhamburguesa>Menú<p>
+                <a class="nav-hamburguesa" href="../index.html">Inicio</a>
+                <a class="nav-hamburguesa" href="../Páginas/Conocenos.html">Conocenos</a>
+                <a class="nav-hamburguesa" href="../Páginas/Productos.html">Productos</a>
+                <a class="nav-hamburguesa" href="../Páginas/Ofertas.html">Ofertas</a>
+                <a class="nav-hamburguesa" href="../Páginas/Contacto.html">Contacto</a>
+              </div>
+          </div>
+          
         </nav>
+
     </header>
       <!-- Fin del header -->
     <main>
         <h1>Nuestros productos.</h1>
 
-        <div id="carouselExampleCaptions" class="carousel slide galeria1" data-bs-ride="carousel">
+        <div id="carouselimagenes" class="carousel slide galeria1" data-bs-ride="carousel">
           <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselimagenes" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselimagenes" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselimagenes" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselimagenes" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselimagenes" data-bs-slide-to="4" aria-label="Slide 5"></button>
           </div>
+          
           <div class="carousel-inner">
 
             <div class="carousel-item active">
-              <img src="../Imagenes/Manteles.jfif" class="d-block imgprod" alt="Manteles con motivos">
-              <div class="carousel-caption d-none d-md-block">
+              <img src="../Imagenes/Manteles.jfif" class="imgprod" alt="Manteles con motivos">
+              <div class="carousel-caption">
                 <h5>Manteles</h5>
                 <p>Contamos con una gran varidedad de tamaños y motivos, con rayas, lunares, lisos, para fiesta y para el día a día. 
                    De algodon, lino, plástico y la mejor confección, para que puedas estilizar y proteger tu mesa.</p>
@@ -52,8 +75,8 @@
             </div>
       
             <div class="carousel-item">
-              <img src="../Imagenes/Perfumesvarios.jpg" class="d-block imgprod" alt="Perfumes Natura">
-              <div class="carousel-caption d-none d-md-block">
+              <img src="../Imagenes/Perfumesvarios.jpg" class="imgprod" alt="Perfumes Natura">
+              <div class="carousel-caption">
                 <h5>Perfumes</h5>
                 <p>¿Te gusta resaltar por tu aroma?
                    Podés encontrar una gran variedad de aromas en los distintos perfumes. Tanto para hombre, mujer, niños, con las mejores marcas para vos.
@@ -62,16 +85,16 @@
             </div>
       
             <div class="carousel-item">
-              <img src="../Imagenes/Sabanaslocal.PNG" class="d-block imgprod " alt="Sabanas en local">
-              <div class="carousel-caption d-none d-md-block">
+              <img src="../Imagenes/Sabanaslocal.PNG" class="imgprod " alt="Sabanas en local">
+              <div class="carousel-caption">
                 <h5>Sabanas</h5>
                 <p>La mejor suavidad para tu descanso, primeras marcas, diversos tamaños y motivos, para que puedas convinar con todos los rincones de tu habitación.</p>
               </div>
             </div>
       
             <div class="carousel-item">
-              <img src="../Imagenes/Toallones.jfif" class="d-block imgprod" alt="Toallones varios">
-              <div class="carousel-caption d-none d-md-block">
+              <img src="../Imagenes/Toallones.jfif" class="imgprod" alt="Toallones varios">
+              <div class="carousel-caption">
                 <h5>Toallones</h5>
                 <p>De todos los tamaños, para que puedas lucir de la mejor manera en la pile o sentir la suavidad en el baño del hogar.
                    Y para los pequeños del hogar, batas con motivos, princesas, vaqueros, astronautas, animales y todos los favoritos, para que puedan jugar y seguir ampliando su imaginación en cada momento.</p>
@@ -79,10 +102,10 @@
             </div>
 
             <div class="carousel-item">
-              <img src="../Imagenes/Varioslocal.PNG" class="d-block imgprod" alt="Varios elementos local">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Varios</h5>
-                <p>Tambien podes encontrar ropa interior para cada miembro de la familia, medias, boxer, bombachas con la mejor tela y la mejor comodidad.
+              <img src="../Imagenes/Varioslocal.PNG" class="imgprod" alt="Varios elementos local">
+              <div class="carousel-caption">
+                <h5 class=>Varios</h5>
+                <p class=>Tambien podes encontrar ropa interior para cada miembro de la familia, medias, boxer, bombachas con la mejor tela y la mejor comodidad.
 
                    Necesitas regalos, tenemos disponibles hermosos almohadones con formas, unicornio y tigres son algunos de los modelos que podes encontrar y disfrutar.</p>
               </div>
@@ -90,18 +113,20 @@
         
           </div>
 
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselimagenes" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span class="d-none">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselimagenes" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="d-none">Next</span>
           </button>
       </div>
       
     </main>
+    
     <footer>
+
         <div class="fin">
             <a class="logof" href="https://www.facebook.com/marisa.tempestti" target="_blank"><i class="fab fa-facebook-square fa-4x facebook" ></i></a>
             <a class="logoi" href="https://www.instagram.com/nakama_mt/" target="_blank"><i class="fab fa-instagram-square fa-4x instagram"></i></a>
@@ -119,6 +144,7 @@
         <p class="h4 cierre">Nakama</p>
 
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 

@@ -1,8 +1,8 @@
 .imgprod{
     @include medidas (500px, 800px);
     margin: auto;
-    display: flex;
     align-content: center;
+    display: block;
 }
 
 .galeria1{
@@ -10,6 +10,7 @@
     display: flex;
     margin: auto;
 }
+
 .carousel-caption{
     background-image: linear-gradient(to right, rgb(238, 146, 89), rgb(255, 255, 255), rgb(238, 146, 89));
     opacity: 80%;
@@ -18,26 +19,28 @@
     @include medidas (200px, 600px);
     align-content: center;
     margin: auto;
-
+    display: block;
 }
 
 @media only screen and (max-width:450px) {
     .galeria1{
-        @include medidas (600px, 319px);
-        margin-bottom: 10px;
-                 
+        @include medidas (880px, 319px);
+        display: flex;
+       
     }
+    .carousel-item{
+        position: absolute;
+
     
+    }
     .imgprod{
-        @include medidas (400px, 280px);
+        @include medidas (400px, 300px);
+    }
 
-        
-        
+     .carousel-caption{
+        @include medidas (450px, 200px);
+        position: relative;
+        margin-top: 20px;
 
     }
-   .carousel-caption{
-    @include medidas (100px, 260px);
-
-
-   }
 }

@@ -42,6 +42,29 @@ a {
 
 .nav-link {
   color: #080707; }
+  .nav-link:hover {
+    background-color: #bb6631; }
+
+.menuhamburguesa {
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  background-color: #bb6631; }
+
+.barrahamburguesa {
+  background-image: linear-gradient(to right, #f1c3c1, #eeb18b, #ee9259);
+  list-style: none;
+  border: 3px solid #080707;
+  font-style: sans-serif;
+  font-size: 26px; }
+
+.botonhamburguesa {
+  display: none; }
+
+.nav-hamburguesa {
+  color: #080707; }
+  .nav-hamburguesa:hover {
+    background-color: #bb6631; }
 
 /* Titulos */
 h1 {
@@ -93,6 +116,24 @@ h1 {
 @media only screen and (max-width: 425px) {
   h1 {
     margin-bottom: 8%; } }
+
+@media only screen and (max-width: 700px) {
+  .nav-link {
+    display: none; }
+  .botonhamburguesa {
+    display: flex;
+    background-color: black; }
+  .barrahamburguesa {
+    position: absolute;
+    display: inline-block;
+    margin-left: 72px;
+    z-index: 1; }
+  .nav-hamburguesa {
+    display: block; }
+  .interiormenu {
+    display: block; }
+  .barraprincipal {
+    border: none; } }
 
 /* INDEX */
 .logoindex {
@@ -218,8 +259,8 @@ h1 {
   height: 500px;
   width: 800px;
   margin: auto;
-  display: flex;
-  align-content: center; }
+  align-content: center;
+  display: block; }
 
 .galeria1 {
   height: 600px;
@@ -235,19 +276,24 @@ h1 {
   height: 200px;
   width: 600px;
   align-content: center;
-  margin: auto; }
+  margin: auto;
+  display: block; }
 
 @media only screen and (max-width: 450px) {
   .galeria1 {
-    height: 600px;
+    height: 880px;
     width: 319px;
-    margin-bottom: 10px; }
+    display: flex; }
+  .carousel-item {
+    position: absolute; }
   .imgprod {
     height: 400px;
-    width: 280px; }
+    width: 300px; }
   .carousel-caption {
-    height: 100px;
-    width: 260px; } }
+    height: 450px;
+    width: 200px;
+    position: relative;
+    margin-top: 20px; } }
 
 /* Ofertas */
 .galofertas {

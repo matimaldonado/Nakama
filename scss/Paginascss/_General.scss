@@ -50,10 +50,45 @@ a{
     border: 3px solid map-get($colores , dark );
     font-style: sans-serif;
     font-size: 26px;
+    
 }
 
 .nav-link{
     color: map-get($colores , dark );
+
+    &:hover{
+        background-color: map-get($colores, oscuro );
+    }
+}
+
+.menuhamburguesa{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    background-color: map-get($colores, oscuro );
+   
+    
+}
+.barrahamburguesa{
+
+    background-image: linear-gradient(to right, rgb(241, 195, 193),rgb(238, 177, 139),rgb(238, 146, 89));    list-style: none;
+    border: 3px solid map-get($colores , dark );
+    font-style: sans-serif;
+    font-size: 26px;
+    
+}
+
+.botonhamburguesa{
+    display: none;
+}
+
+.nav-hamburguesa{
+    color: map-get($colores , dark );
+
+    &:hover{
+        background-color: map-get($colores, oscuro );
+        }
+  
 }
 
 /* Titulos */
@@ -130,3 +165,34 @@ h1{
         margin-bottom:8%;}
 }
 
+@media only screen and (max-width:700px ) {
+    .nav-link{
+        display: none;
+    }
+    .botonhamburguesa{
+        display: flex;
+        background-color: black;
+        
+
+    }
+    .barrahamburguesa{
+        position: absolute;
+        display: inline-block;
+        margin-left: 72px;
+        z-index: 1;
+    
+    }
+    .nav-hamburguesa{
+        display: block;
+        
+    
+    }
+    .interiormenu{
+       display: block;
+
+    }
+    .barraprincipal{
+        border: none;
+    }    
+   
+}
